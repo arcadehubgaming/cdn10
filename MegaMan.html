@@ -11,9 +11,19 @@
 </div>
 <script type="text/javascript">
     EJS_player = '#game';
-    EJS_biosUrl = ''; // Url to Famicom Disk System bios
-    EJS_gameUrl = 'https://raw.githubusercontent.com/notchyves/romarchives/main/Mega%20Man%20(U).nes'; // Url to Game rom
-    EJS_core = 'nes'; // Optional core: mesen, nestopia
+    
+    // Can also be snes9x
+    EJS_core = 'nes';
+    
     EJS_lightgun = false; // Lightgun
+    
+    // URL to BIOS file
+    EJS_biosUrl = '';
+    
+    // URL to Game rom
+    EJS_gameUrl = 'https://raw.githack.com/notchyves/romarchives/main/Mega%20Man%20(U).nes';
+    
+    // Path to the data directory
+    EJS_pathtodata = 'data/';
 </script>
 <script src="https://www.emulatorjs.com/loader.js"></script>
