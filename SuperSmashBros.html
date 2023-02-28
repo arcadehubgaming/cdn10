@@ -15,10 +15,12 @@
     window.EJS_gameUrl = 'https://raw.githubusercontent.com/notchyves/romarchives/main/Super%20Smash%20Bros.%20(U)%20%5B!%5D.z64'; // Url to Game rom
     window.EJS_core = 'n64';
   
+  
+  let blob = await fetch(window.EJS_gameUrl).then(r => r.blob());
                  window.EJS_biosUrl = "";
   window.EJS_pathtodata = "data/";
   window.EJS_player = "#game"
-                window.EJS_gameName = URL.createObjectURL("https://raw.githubusercontent.com/notchyves/romarchives/main/Super%20Smash%20Bros.%20(U)%20%5B!%5D.z64");
+                window.EJS_gameName = URL.createObjectURL(blob);
 
   const script = document.createElement("script")
 
